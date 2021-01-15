@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+<!-- /Sökoptimering-->
+  <meta name="Karaoke" content="En community för personer som vill sjunga karaoke tillsammans eller själv."/>
+  <meta name="keywords" content="karaoke, sing, music, sing together, music community, fun, song">
+  <title>Karaokeo</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="css/profile.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/min.css">
+  <link rel="icon" type="image/png" href="img/fav.png" />
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+<img src="img/user.png" alt="user" class="center"> 
+
+
+<div class="container-fluid">
+   <h1 class="mt-4">Profile</h1>
+  <form action="/action_page.php">
+    <label for="fname">First name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="uname">Username</label>
+    <input type="text" id="uname" name="username" placeholder="Your user name..">
+    <div class="feedback d-none" >Username must be between 3-12 characters and only contain letters or numbers</div>
+    <label for="pass">Password</label>
+    <input type="password" placeholder="Enter password...">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="sverige">Sweden</option>
+      <option value="danmark">Denmark</option>
+      <option value="finland">Finland</option>
+      <option value="norge">Norway</option>
+    </select>
+
+<label class="my-1 mr-2" for="inlineFormCustomSelectPref">Genre</label> <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+<option selected>
+Any
+</option>
+<option value="1">
+Pop
+</option>
+<option value="2">
+Rock
+</option>
+<option value="3">
+Classic
+</option>
+<option value="4">
+Elektronisk
+</option>
+<option value="5">
+Punk
+</option>
+<option value="6">
+Metal
+</option>
+
+</select>
+
+
+   
+   <a href="privacy.html"><button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button></a>
+  </form>
+</div>
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  <script src="javaScript/main.js"></script>
+
+</body>
+
+</html>

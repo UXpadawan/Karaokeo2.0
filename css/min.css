@@ -1,0 +1,8 @@
+/* regEx validation colors, används vid inlogg sidan */
+.error {
+    border: 4px solid crimson !important;
+    
+  }
+.success {
+    border: 4px solid limegreen !important;
+  }
